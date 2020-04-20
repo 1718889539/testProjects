@@ -23,6 +23,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # account app
     'blueapps.account',
+    'rest_framework',
 )
 
 MIDDLEWARE = (

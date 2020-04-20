@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="44b3e02d-0916-4af0-b64a-84f0b9fd2677" name="paas" url="http://106.12.32.227">
+        <fileTransfer host="106.12.32.227" port="22" rootFolder="/var/passFramework" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="0d4b18fd-dc68-4c53-8c6c-5f870b05b3db" name="容器内部" url="http://127.0.0.1">
+        <fileTransfer host="127.0.0.1" port="8022" rootFolder="/var/paasFramework" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="8022" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
