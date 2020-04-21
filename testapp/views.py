@@ -14,4 +14,7 @@ class TestAPIView(APIView):
     authentication_classes = []
 
     def get(self, request, *args, **kwargs):
-        return Response({'status': 0, 'detail': 'success'})
+        user = request.user
+        if user.is_authenticated:
+            return Response({'status': 0, 'detail': '已认证'})
+        return Response({'status': 1, 'detail': '未认证'})
