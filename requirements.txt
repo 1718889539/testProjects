@@ -14,7 +14,7 @@ django-celery==3.2.1
 python-json-logger==0.1.7
 whitenoise==3.3.0
 six==1.11.0
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 clery-with-redis==3.0
 redis==2.10.6
 
